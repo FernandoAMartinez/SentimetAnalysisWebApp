@@ -6,3 +6,4 @@ C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebAp
 C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.dll
 C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.pdb
+C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.csprojAssemblyReference.cache
