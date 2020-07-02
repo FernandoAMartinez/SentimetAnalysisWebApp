@@ -1,9 +1,0 @@
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\bin\Release\netcoreapp3.1\DTO.deps.json
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\bin\Release\netcoreapp3.1\DTO.dll
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\bin\Release\netcoreapp3.1\DTO.pdb
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.AssemblyInfo.cs
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.dll
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.pdb
-C:\Users\Kraps\source\repos\SentimentAnalysisNetCoreWebApp\SentimetAnalysisWebApp\DTO\obj\Release\netcoreapp3.1\DTO.csprojAssemblyReference.cache
