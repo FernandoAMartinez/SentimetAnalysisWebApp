@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute("Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFac" +
     "tory, Microsoft.AspNetCore.Mvc.Razor")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("SentimentAnalysisWebApp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("FernandoAMartinez")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyProductAttribute("SentimentAnalysisWebApp")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

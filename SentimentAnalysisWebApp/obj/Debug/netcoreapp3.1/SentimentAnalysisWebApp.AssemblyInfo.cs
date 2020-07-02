@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("79a67791-0743-43c9-9bc6-f7128b7d10e5")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("SentimentAnalysisWebApp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("FernandoAMartinez")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]

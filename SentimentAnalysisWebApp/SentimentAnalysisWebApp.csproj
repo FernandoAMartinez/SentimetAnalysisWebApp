@@ -6,6 +6,9 @@
     <UserSecretsId>79a67791-0743-43c9-9bc6-f7128b7d10e5</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <Authors>FernandoAMartinez</Authors>
+    <StartupObject>SentimentAnalysisWebApp.Program</StartupObject>
+    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
