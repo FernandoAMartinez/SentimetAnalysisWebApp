@@ -8,7 +8,7 @@ namespace MLAccessLayer
 {
     public interface IMLAccess
     {
-        public  TrainTestData LoadData(MLContext mlContext);
+        public  TrainTestData LoadData(MLContext mlContext, string fullPath);
         public  ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet);
         public StringBuilder Evaluate(MLContext mlContext, ITransformer model, IDataView splitTestSet);
         public StringBuilder UseModelWithSingleItem(MLContext mlContext, ITransformer model);

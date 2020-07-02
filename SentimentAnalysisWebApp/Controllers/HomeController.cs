@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Text;
 using SentimentAnalysisWebApp.Helpers;
 using static Microsoft.ML.DataOperationsCatalog;
+using Microsoft.Extensions.Hosting;
 
 namespace SentimentAnalysisWebApp.Controllers
 {
@@ -22,6 +23,8 @@ namespace SentimentAnalysisWebApp.Controllers
         private readonly ILogger<HomeController> _logger;
 
         private readonly IMLAccess MLAccess;
+
+        private readonly IHostEnvironment environment;
         //private static MLAccess mlAccess;
         //public static MLAccess MLAccess
         //{
@@ -34,10 +37,11 @@ namespace SentimentAnalysisWebApp.Controllers
             //}
         //}
 
-        public HomeController(ILogger<HomeController> logger, IMLAccess access)
+        public HomeController(ILogger<HomeController> logger, IMLAccess access, IHostEnvironment env)
         {
             _logger = logger;
             MLAccess = access;
+            environment = env;
         }
 
         #region Views
@@ -51,7 +55,7 @@ namespace SentimentAnalysisWebApp.Controllers
         public ActionResult<ConsoleViewModel> Index()
         {
 
-            TrainTestData splitDataView = MLAccess.LoadData(mlContext);
+            TrainTestData splitDataView = MLAccess.LoadData(mlContext, environment.ContentRootPath);
             viewModel.StringBuilder.Append("=============== Create and Train the Model ===============");
             ITransformer model = MLAccess.BuildAndTrainModel(mlContext, splitDataView.TrainSet);
             viewModel.StringBuilder.AppendLine("=============== End of training ===============");
@@ -67,7 +71,7 @@ namespace SentimentAnalysisWebApp.Controllers
         [Route("Home/GetPredictionFromModel/{inputSentiment}")]
         public ActionResult<string> GetPredictionFromModel(string inputSentiment) 
         {
-            TrainTestData splitDataView = MLAccess.LoadData(mlContext);
+            TrainTestData splitDataView = MLAccess.LoadData(mlContext, environment.ContentRootPath);
             ITransformer model = MLAccess.BuildAndTrainModel(mlContext, splitDataView.TrainSet);
             //ITransformer model = HttpContext.Session.GetComplexData<ITransformer>("model");
             //MLContext context = HttpContext.Session.GetComplexData<MLContext>("mlContext");

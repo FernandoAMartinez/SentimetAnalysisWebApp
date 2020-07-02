@@ -13,14 +13,14 @@ namespace MLAccessLayer
     public class MLAccess : IMLAccess
     {
         //static readonly string textDirectory = Path.Combine(Environment.CurrentDirectory + "/Data");
-        static readonly string textDirectory = Path.Combine(Directory.GetCurrentDirectory() + @"/Data");
-        static readonly string textFullPath = Path.GetFullPath(textDirectory);
+        //static readonly string textDirectory = Path.Combine(Directory.GetCurrentDirectory() + @"/Data");
+        //static readonly string textFullPath = Path.GetFullPath(textDirectory);
         //static readonly string fullPath = Path.GetFullPath(Path.Combine(System.AppContext.BaseDirectory, @"..\..\..\..\"+ System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + @"\Data"));
         //static readonly string _dataPath = Path.Combine(fullPath, "yelp_labelled.txt");
-        static readonly string _dataPath = Path.Combine(textFullPath, "yelp_labelled.txt");
 
-        public TrainTestData LoadData(MLContext mlContext)
+        public TrainTestData LoadData(MLContext mlContext, string textFullPath)
         {
+            string _dataPath = Path.GetFullPath(Path.Combine(textFullPath, @"Data\yelp_labelled.txt"));
             IDataView dataView = mlContext.Data.LoadFromTextFile<SentimentData>(_dataPath, hasHeader: false);
             TrainTestData splitDataView = mlContext.Data.TrainTestSplit(dataView, testFraction: 0.2);
             return splitDataView;
