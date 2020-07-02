@@ -24,6 +24,7 @@ namespace SentimentAnalysisWebApp
             services.AddSingleton<MLAccessLayer.IMLAccess, MLAccessLayer.MLAccess>();
             services.AddControllersWithViews();
             //services.AddMvc().AddSessionStateTempDataProvider();
+            services.AddDirectoryBrowser();
             services.AddDistributedMemoryCache();
             services.AddSession();
           
@@ -49,8 +50,15 @@ namespace SentimentAnalysisWebApp
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
-                    Path.Combine(env.ContentRootPath, "Data")),
-                RequestPath = "/LearningData"
+                    Path.Combine(env.WebRootPath, "Data")),
+                RequestPath = "/Data"
+            });
+
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+            Path.Combine(env.WebRootPath, "Data")),
+                RequestPath = "/Data"
             });
 
             app.UseRouting();
