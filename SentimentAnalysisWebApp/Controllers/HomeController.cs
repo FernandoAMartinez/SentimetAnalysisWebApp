@@ -8,6 +8,7 @@ using System.Text;
 using SentimentAnalysisWebApp.Helpers;
 using static Microsoft.ML.DataOperationsCatalog;
 using Microsoft.Extensions.Hosting;
+using System.IO;
 
 namespace SentimentAnalysisWebApp.Controllers
 {
@@ -54,8 +55,9 @@ namespace SentimentAnalysisWebApp.Controllers
 
         public ActionResult<ConsoleViewModel> Index()
         {
-
-            TrainTestData splitDataView = MLAccess.LoadData(mlContext, environment.ContentRootPath);
+            var file = Path.Combine(Directory.GetCurrentDirectory(),
+                          "Data", "yelp_labelled.txt");
+            TrainTestData splitDataView = MLAccess.LoadData(mlContext, file);
             viewModel.StringBuilder.AppendLine(environment.ContentRootPath);
             viewModel.StringBuilder.AppendLine("=============== Create and Train the Model ===============");
             ITransformer model = MLAccess.BuildAndTrainModel(mlContext, splitDataView.TrainSet);
@@ -72,7 +74,10 @@ namespace SentimentAnalysisWebApp.Controllers
         [Route("Home/GetPredictionFromModel/{inputSentiment}")]
         public ActionResult<string> GetPredictionFromModel(string inputSentiment) 
         {
-            TrainTestData splitDataView = MLAccess.LoadData(mlContext, environment.ContentRootPath);
+            var file = Path.Combine(Directory.GetCurrentDirectory(),
+              "Data", "yelp_labelled.txt");
+
+            TrainTestData splitDataView = MLAccess.LoadData(mlContext, file);
             ITransformer model = MLAccess.BuildAndTrainModel(mlContext, splitDataView.TrainSet);
             //ITransformer model = HttpContext.Session.GetComplexData<ITransformer>("model");
             //MLContext context = HttpContext.Session.GetComplexData<MLContext>("mlContext");

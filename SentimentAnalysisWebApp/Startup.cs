@@ -2,8 +2,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.ML;
+using System.IO;
 
 namespace SentimentAnalysisWebApp
 {
@@ -43,6 +45,13 @@ namespace SentimentAnalysisWebApp
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "Data")),
+                RequestPath = "/LearningData"
+            });
 
             app.UseRouting();
 
