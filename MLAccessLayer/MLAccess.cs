@@ -13,7 +13,7 @@ namespace MLAccessLayer
     public class MLAccess : IMLAccess
     {
         //static readonly string textDirectory = Path.Combine(Environment.CurrentDirectory + "/Data");
-        static readonly string textDirectory = Path.Combine(Directory.GetCurrentDirectory() + @"\Data");
+        static readonly string textDirectory = Path.Combine(Directory.GetCurrentDirectory() + @"/Data");
         static readonly string textFullPath = Path.GetFullPath(textDirectory);
         //static readonly string fullPath = Path.GetFullPath(Path.Combine(System.AppContext.BaseDirectory, @"..\..\..\..\"+ System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + @"\Data"));
         //static readonly string _dataPath = Path.Combine(fullPath, "yelp_labelled.txt");

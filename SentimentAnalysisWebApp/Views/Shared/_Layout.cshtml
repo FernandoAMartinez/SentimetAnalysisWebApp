@@ -38,9 +38,9 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - SentimentAnalysisWebApp - UAI Lomas - Modelización Numérica@*<a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
-            <br />@System.IO.Path.Combine(Environment.CurrentDirectory, @"\Data")
+            <br />@System.IO.Path.Combine(Environment.CurrentDirectory, @"/Data")
             <br />@System.IO.Directory.GetCurrentDirectory()
-            <br />
+            <br />@System.IO.Path.GetFullPath(Environment.CurrentDirectory)
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
