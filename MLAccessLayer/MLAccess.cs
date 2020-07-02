@@ -20,7 +20,7 @@ namespace MLAccessLayer
 
         public TrainTestData LoadData(MLContext mlContext, string textFullPath)
         {
-            string _dataPath = Path.GetFullPath(Path.Combine(textFullPath, @"Data\yelp_labelled.txt"));
+            string _dataPath = Path.GetFullPath(Path.Combine(textFullPath, @"..\" + Assembly.GetExecutingAssembly().GetName().Name, "Data", "yelp_labelled.txt"));
             IDataView dataView = mlContext.Data.LoadFromTextFile<SentimentData>(_dataPath, hasHeader: false);
             TrainTestData splitDataView = mlContext.Data.TrainTestSplit(dataView, testFraction: 0.2);
             return splitDataView;
