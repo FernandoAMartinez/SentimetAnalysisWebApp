@@ -5531,11 +5531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kraps\\source\\repos\\MLAccessLayer\\MLAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Kraps\\source\\repos\\SentimentAnalysisNetCoreWebApp\\SentimetAnalysisWebApp\\MLAccessLayer\\MLAccessLayer.csproj",
       "projectName": "MLAccessLayer",
-      "projectPath": "C:\\Users\\Kraps\\source\\repos\\MLAccessLayer\\MLAccessLayer.csproj",
+      "projectPath": "C:\\Users\\Kraps\\source\\repos\\SentimentAnalysisNetCoreWebApp\\SentimetAnalysisWebApp\\MLAccessLayer\\MLAccessLayer.csproj",
       "packagesPath": "C:\\Users\\Kraps\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kraps\\source\\repos\\MLAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\Kraps\\source\\repos\\SentimentAnalysisNetCoreWebApp\\SentimetAnalysisWebApp\\MLAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -5558,8 +5558,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Kraps\\source\\repos\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\Kraps\\source\\repos\\DTO\\DTO.csproj"
+            "C:\\Users\\Kraps\\source\\repos\\SentimentAnalysisNetCoreWebApp\\SentimetAnalysisWebApp\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\Kraps\\source\\repos\\SentimentAnalysisNetCoreWebApp\\SentimetAnalysisWebApp\\DTO\\DTO.csproj"
             }
           }
         }

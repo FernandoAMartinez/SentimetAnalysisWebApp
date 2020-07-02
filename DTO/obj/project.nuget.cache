@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mB9/OcQ7sZK9LDK9tyReLKZ0ITefdRwrbtKXa63Mf9y9rRgZM0Sd2kiO7lVcC7eVqRa2N29EyyJRZDe1z8aGuA==",
+  "dgSpecHash": "WElsX5gVWRpJqKnd1zP71Jf+X4apGLMRTOCbO/+jL7kWsWwBD5vK2DTns5i2qS2B3eYIHRJbfd9NyyTPJdIhug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kraps\\source\\repos\\DTO\\DTO.csproj",
+  "projectFilePath": "C:\\Users\\Kraps\\source\\repos\\SentimentAnalysisNetCoreWebApp\\SentimetAnalysisWebApp\\DTO\\DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kraps\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Kraps\\.nuget\\packages\\microsoft.ml\\1.5.0\\microsoft.ml.1.5.0.nupkg.sha512",
