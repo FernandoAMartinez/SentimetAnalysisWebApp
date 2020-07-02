@@ -56,7 +56,8 @@ namespace SentimentAnalysisWebApp.Controllers
         {
 
             TrainTestData splitDataView = MLAccess.LoadData(mlContext, environment.ContentRootPath);
-            viewModel.StringBuilder.Append("=============== Create and Train the Model ===============");
+            viewModel.StringBuilder.AppendLine(environment.ContentRootPath);
+            viewModel.StringBuilder.AppendLine("=============== Create and Train the Model ===============");
             ITransformer model = MLAccess.BuildAndTrainModel(mlContext, splitDataView.TrainSet);
             viewModel.StringBuilder.AppendLine("=============== End of training ===============");
 
